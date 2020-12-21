@@ -25,10 +25,12 @@ export const pageAnim = {
 
 export const titleAnim = {
     hidden: {
-        y:200
+        y:200,
+        opacity: 0
     },
     show: {
         y:0,
+        opacity:1,
         transition: {
             duration: 1,
             ease: "easeOut"

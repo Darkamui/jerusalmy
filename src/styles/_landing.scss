@@ -6,15 +6,15 @@
 	padding: 5rem 20rem;
 	color: white;
 	.image {
-		flex: 1 1;
+		flex: 1;
 		img {
-			width: 55rem;
+			width: 50rem;
 			object-fit: contain;
 			border-radius: 10rem;
 		}
 	}
 	.description {
-		flex: 1 1;
+		flex: 1;
 		padding-right: 10rem;
 	}
 	h2 {
@@ -35,13 +35,29 @@
 	button {
 		font-size: 1.25rem;
 	}
+	@media (max-width: 1600px) {
+		.image {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			img {
+				width: 45rem;
+				object-fit: contain;
+				border-radius: 10rem;
+			}
+		}
+	}
 	@media (max-width: 1200px) {
 		display: block;
 
 		text-align: center;
-		img {
-			margin-top: 25px;
-			width: 40rem;
+		.image {
+			flex: 1;
+			img {
+				width: 40rem;
+				object-fit: contain;
+				border-radius: 10rem;
+			}
 		}
 		.description {
 			padding-right: 0;
@@ -54,9 +70,14 @@
 		.description {
 			padding-right: 0;
 		}
-		img {
-			margin-top: 25px;
-			width: 40rem;
+		.image {
+			margin: 25px;
+			flex: 1;
+			img {
+				width: 30rem;
+				object-fit: contain;
+				border-radius: 10rem;
+			}
 		}
 	}
 }
