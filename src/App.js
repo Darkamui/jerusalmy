@@ -5,7 +5,6 @@ import Nav from './components/Nav';
 //Import Styles
 import './styles/app.scss';
 //Import Utils
-import data from './utils';
 import Landing from './components/Landing';
 import Ouvrages from './pages/Ouvrages';
 import LibraryBook from './pages/LibraryBook';
@@ -16,8 +15,6 @@ import {AnimatePresence} from 'framer-motion';
 export default function App() {
     const location = useLocation();
     //State
-    const [books,setBooks] = useState(data());
-    const [currentBook, setCurrentBook] = useState(books[0]);
     const [libraryStatus, setLibraryStatus] = useState(false);
 
     return (

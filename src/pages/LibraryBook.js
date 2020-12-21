@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react';
-import raphy from '../img/raphy.png';
 import {useHistory} from 'react-router-dom';
 import {MovieState} from '../utils';
 import {pageAnim,titleAnim2,fade,photoAnim} from '../animation';
@@ -23,7 +22,7 @@ export default function LibraryBook() {
                     <motion.img variants={photoAnim} src={movie.img} alt=""/>
                 </div>
                 <div className="hide">
-                <motion.div variants={titleAnim2} className="book-details">
+                <motion.div setMovies={setMovies} variants={titleAnim2} className="book-details">
                     <motion.h1 variants={fade}>{movie.title}</motion.h1>
                     <motion.p variants={fade}>{movie.description}</motion.p>
                 </motion.div>            

@@ -6,7 +6,7 @@ import evac from '../img/evac.jpg';
 import mozart from '../img/mozart.webp';
 import obus from '../img/obus.jpg';
 import rose from '../img/rose.jpg';
-import {pageAnim,fade,slider, titleAnim} from '../animation';
+import {pageAnim,fade,titleAnim} from '../animation';
 import {motion} from 'framer-motion';
 
 
