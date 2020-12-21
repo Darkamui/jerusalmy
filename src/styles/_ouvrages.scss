@@ -1,0 +1,55 @@
+.ouvrages-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2rem 20rem;
+	@media (max-width: 580px) {
+		justify-content: center;
+	}
+}
+
+.ouvrages-container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 2rem 20rem;
+}
+
+.book-card {
+	// border: 3px solid rgb(65, 65, 65);
+	width: 20rem;
+	margin-bottom: 15px;
+
+	img {
+		width: 20rem;
+		display: flex;
+		justify-content: center;
+		border-radius: 2rem;
+	}
+	h4 {
+		margin-top: 5px;
+		font-size: 1.75rem;
+		color: white;
+		padding: 1.5rem;
+		text-align: center;
+		font-weight: 400;
+	}
+	&:hover {
+		img {
+			box-shadow: 2px 2px 50px red;
+		}
+		h4 {
+			color: lightsalmon;
+			font-weight: 500;
+		}
+	}
+}
+
+.ouvrages-title {
+	color: #23d997;
+	font-size: 3rem;
+	font-weight: lighter;
+	text-decoration: underline;
+	padding: 2rem;
+	text-align: center;
+}

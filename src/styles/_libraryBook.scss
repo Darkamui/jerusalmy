@@ -1,0 +1,50 @@
+.libraryBook-container {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	img {
+		width: 30rem;
+	}
+	.book-details {
+		padding-top: 5rem;
+		padding-right: 20rem;
+		h1 {
+			color: white;
+			font-size: 2.5rem;
+			font-weight: lighter;
+			padding: 2rem;
+			text-decoration: underline;
+			text-align: center;
+			color: #23d997;
+		}
+		p {
+			font-size: 1.75rem;
+			line-height: 1.5;
+			color: whitesmoke;
+			font-weight: lighter;
+			padding: 2rem;
+			text-align: justify;
+		}
+		@media (max-width: 1300px) {
+			padding-right: 0rem;
+		}
+		@media (max-width: 768px) {
+			padding: 0 5rem 0 5rem;
+		}
+	}
+	.cover-container {
+		padding: 5rem 5rem 5rem 20rem;
+
+		@media (max-width: 1300px) {
+			padding: 5rem 0 5rem 5rem;
+		}
+		@media (max-width: 768px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	@media (max-width: 768px) {
+		display: block;
+	}
+}

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import {Switch,Route,useLocation} from 'react-router-dom';
+//Import Components
+import Nav from './components/Nav';
+//Import Styles
+import './styles/app.scss';
+//Import Utils
+import data from './utils';
+import Landing from './components/Landing';
+import Ouvrages from './pages/Ouvrages';
+import LibraryBook from './pages/LibraryBook';
+import About from './pages/About';
+import {AnimatePresence} from 'framer-motion';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+    const location = useLocation();
+    //State
+    const [books,setBooks] = useState(data());
+    const [currentBook, setCurrentBook] = useState(books[0]);
+    const [libraryStatus, setLibraryStatus] = useState(false);
+
+    return (
+        <div>
+            <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
+                <AnimatePresence exitBeforeEnter>
+                    <Switch location={location} key={location.pathname}>
+                        <Route path="/" exact>
+                            <Landing/>
+                        </Route>
+
+                        <Route path="/ouvrages" exact>
+                            <Ouvrages/>
+                        </Route>
+                        <Route path="/auteur" exact>
+                            <About/>
+                        </Route>
+                        <Route path="/:id">
+                            <LibraryBook/>
+                        </Route>
+                        
+                    </Switch>
+                </AnimatePresence>
+            
+            
+            {/* <Book currentBook={currentBook}/>
+            <Library books={books} libraryStatus={libraryStatus}  currentBook={currentBook} setCurrentBook={setCurrentBook}/> */}
+        </div>
+    )
 }
-
-export default App;
