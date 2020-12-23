@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import raphy from "../img/raphy.png";
 import {
 	pageAnim,
-	titleAnim,
-	fade,
 	photoAnimDelayed,
 	titleAnimDelayed,
 	fadeDelayed,
 } from "../animation";
 import { motion } from "framer-motion";
 import Wave from "./Wave";
-import Text from "../components/Text";
 
 export default function Landing() {
 	return (
