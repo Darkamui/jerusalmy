@@ -49,7 +49,7 @@ export const titleAnimDelayed = {
 		transition: {
 			duration: 1,
 			ease: "easeOut",
-			delay: 6.5,
+			delay: 7,
 		},
 	},
 };
@@ -89,7 +89,7 @@ export const fadeDelayed = {
 		transition: {
 			duration: 2,
 			ease: "easeOut",
-			delay: 7,
+			delay: 7.5,
 		},
 	},
 };
@@ -120,7 +120,7 @@ export const photoAnimDelayed = {
 		transition: {
 			ease: "easeOut",
 			duration: 1,
-			delay: 8.5,
+			delay: 9,
 		},
 	},
 };
