@@ -50,6 +50,142 @@ a {
 	z-index: -1;
 }
 
+.intro {
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// transform: translateY(-100%);
+	animation: hideIntro 1s ease forwards 7s;
+}
+
+#landingAnim {
+	animation: fillyy 0.5s ease forwards 2s;
+}
+
+#landingAnim path:nth-child(2) {
+	stroke-dasharray: 340;
+	stroke-dashoffset: 340;
+	animation: landing-anim 2s ease forwards;
+}
+
+#landingAnim path:nth-child(3) {
+	stroke-dasharray: 393;
+	stroke-dashoffset: 393;
+	animation: landing-anim 2s ease forwards 0.3s;
+}
+
+#landingAnim path:nth-child(4) {
+	stroke-dasharray: 336;
+	stroke-dashoffset: 336;
+	animation: landing-anim 2s ease forwards 0.6s;
+}
+
+#landingAnim path:nth-child(5) {
+	stroke-dasharray: 341;
+	stroke-dashoffset: 341;
+	animation: landing-anim 2s ease forwards 0.9s;
+}
+
+#landingAnim path:nth-child(6) {
+	stroke-dasharray: 407;
+	stroke-dashoffset: 407;
+	animation: landing-anim 2s ease forwards 1.2s;
+}
+
+#landingAnim path:nth-child(7) {
+	stroke-dasharray: 267;
+	stroke-dashoffset: 267;
+	animation: landing-anim 2s ease forwards 1.5s;
+}
+
+#landingAnim path:nth-child(8) {
+	stroke-dasharray: 351;
+	stroke-dashoffset: 351;
+	animation: landing-anim 2s ease forwards 1.8s;
+}
+
+#landingAnim path:nth-child(9) {
+	stroke-dasharray: 292;
+	stroke-dashoffset: 292;
+	animation: landing-anim 2s ease forwards 2.1s;
+}
+
+#landingAnim path:nth-child(10) {
+	stroke-dasharray: 284;
+	stroke-dashoffset: 284;
+	animation: landing-anim 2s ease forwards 2.4s;
+}
+
+#landingAnim path:nth-child(11) {
+	stroke-dasharray: 341;
+	stroke-dashoffset: 341;
+	animation: landing-anim 2s ease forwards 2.7s;
+}
+
+#landingAnim path:nth-child(12) {
+	stroke-dasharray: 462;
+	stroke-dashoffset: 462;
+	animation: landing-anim 2s ease forwards 3s;
+}
+
+#landingAnim path:nth-child(13) {
+	stroke-dasharray: 317;
+	stroke-dashoffset: 317;
+	animation: landing-anim 2s ease forwards 3.3s;
+}
+
+#landingAnim path:nth-child(14) {
+	stroke-dasharray: 432;
+	stroke-dashoffset: 432;
+	animation: landing-anim 2s ease forwards 3.6s;
+}
+
+#landingAnim path:nth-child(15) {
+	stroke-dasharray: 341;
+	stroke-dashoffset: 341;
+	animation: landing-anim 2s ease forwards 3.9s;
+}
+
+#landingAnim path:nth-child(16) {
+	stroke-dasharray: 480;
+	stroke-dashoffset: 480;
+	animation: landing-anim 2s ease forwards 4.2s;
+}
+
+#landingAnim path:nth-child(17) {
+	stroke-dasharray: 407;
+	stroke-dashoffset: 407;
+	animation: landing-anim 2s ease forwards 4.5s;
+}
+
+@keyframes landing-anim {
+	to {
+		stroke-dashoffset: 0;
+		fill: white;
+	}
+}
+
+@keyframes fillyy {
+	from {
+		fill: transparent !important;
+	}
+	to {
+		fill: white !important;
+	}
+}
+
+@keyframes hideIntro {
+	to {
+		transform: translateY(100%);
+	}
+}
+
 @import "./nav";
 @import "./landing";
 @import "./libraryBook";
