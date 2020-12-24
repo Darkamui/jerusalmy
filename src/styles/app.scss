@@ -78,9 +78,9 @@ a {
 	animation: hideIntro 0.5s ease forwards 7.5s;
 }
 
-#landingAnim {
-	animation: fillyy 0.5s ease forwards 2s;
-}
+// #landingAnim {
+// 	animation: fillyy 0.5s ease forwards 2s;
+// }
 
 #landingAnim path:nth-child(2) {
 	stroke-dasharray: 340;
@@ -185,14 +185,14 @@ a {
 	}
 }
 
-@keyframes fillyy {
-	from {
-		fill: transparent !important;
-	}
-	to {
-		fill: white !important;
-	}
-}
+// @keyframes fillyy {
+// 	from {
+// 		fill: transparent !important;
+// 	}
+// 	to {
+// 		fill: white !important;
+// 	}
+// }
 
 @keyframes hideIntro {
 	to {
