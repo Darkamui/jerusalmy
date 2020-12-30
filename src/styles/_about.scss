@@ -4,16 +4,15 @@
 	@media (max-width: 1200px) {
 		display: block;
 	}
+	align-items: center;
 }
 
 .aboutImg-container {
-	flex: 1;
 	display: flex;
 	padding: 5rem 0 5rem 20rem;
-	justify-content: center;
-	align-items: center;
+
 	img {
-		width: 50rem;
+		width: 40rem;
 		object-fit: contain;
 		border-radius: 10rem;
 	}
@@ -30,20 +29,19 @@
 }
 
 .aboutText-container {
-	flex: 1;
 	color: white;
-	padding: 5rem 20rem 5rem 0;
-
+	padding: 0rem 20rem 0rem 0;
+	width: 65%;
 	p {
-		line-height: 1.5;
+		line-height: 2;
 		font-size: 1.5rem;
 		font-weight: lighter;
 	}
 	@media (max-width: 1600px) {
-		padding: 10rem 20rem 5rem 0rem;
+		padding: 0rem 20rem 0rem 0rem;
 	}
 	@media (max-width: 1200px) {
 		padding: 0;
-		margin: 0 50px;
+		margin: 0 auto;
 	}
 }

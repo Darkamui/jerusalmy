@@ -35,8 +35,10 @@ export default function Landing() {
 				</motion.button>
 			</div>
 			<Wave></Wave>
-			<div className='image hide'>
-				<motion.img variants={photoAnimDelayed} src={raphy} alt='' />
+			<div className='image '>
+				<div className='hide'>
+					<motion.img variants={photoAnimDelayed} src={raphy} alt='' />
+				</div>
 			</div>
 		</motion.div>
 	);

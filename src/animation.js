@@ -56,10 +56,12 @@ export const titleAnimDelayed = {
 
 export const titleAnim2 = {
 	hidden: {
-		x: 1000,
+		x: 100,
+		opacity: 0,
 	},
 	show: {
 		x: 0,
+		opacity: 1,
 		transition: {
 			duration: 1,
 			ease: "easeOut",
