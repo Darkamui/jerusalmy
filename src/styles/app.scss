@@ -51,6 +51,25 @@ a {
 	z-index: -1;
 }
 
+.jerumedia {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		max-width: 100px;
+	}
+	@media (max-width: 1600px) {
+		img {
+			max-width: 75px;
+		}
+	}
+	@media (max-width: 1100px) {
+		img {
+			max-width: 60px;
+		}
+	}
+}
+
 .intro {
 	background: black;
 	position: fixed;

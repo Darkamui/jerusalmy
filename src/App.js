@@ -20,6 +20,7 @@ export default function App() {
 	return (
 		<div>
 			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
 					<Route path='/' exact>
