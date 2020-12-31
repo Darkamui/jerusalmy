@@ -33,28 +33,38 @@ export default function LibraryBook() {
 						</div>
 					</div>
 					<div className=''>
-						<motion.div
-							setMovies={setMovies}
-							variants={titleAnim2}
-							className='book-details '>
-							<motion.h1 variants={fade}>{movie.title}</motion.h1>
-							<motion.h4 variants={fade}>
-								<span className='greenFont'>Éditeur</span> : {movie.editeur}
-							</motion.h4>
-							<motion.h4 variants={fade}>
-								<span className='greenFont'>Date de parution </span>:{" "}
-								{movie.date}
-							</motion.h4>
-							<motion.p variants={fade}>{movie.description}</motion.p>
-							<div className='shop-container'>
-								<motion.p variants={fade}>Acheter ce livre : </motion.p>
+						<div className='hide'>
+							<motion.div
+								setMovies={setMovies}
+								variants={titleAnim2}
+								className='book-details '>
+								<motion.h1 variants={fade}>{movie.title}</motion.h1>
+								<motion.h4 variants={fade}>
+									<span className='greenFont'>Éditeur</span> : {movie.editeur}
+								</motion.h4>
+								<motion.h4 variants={fade}>
+									<span className='greenFont'>Date de parution </span>:{" "}
+									{movie.date}
+								</motion.h4>
+								<motion.p variants={fade}>{movie.description}</motion.p>
+								<div className='shop-container'>
+									<motion.p variants={fade}>Acheter ce livre : </motion.p>
 
-								<img src={amazon} alt='' />
-								<img src={fnac} alt='' />
-								<img src={rakuten} alt='' />
-								<img src={cultura} alt='' />
-							</div>
-						</motion.div>
+									<a href={movie.amazon} target='_blank' rel='noreferrer'>
+										<img src={amazon} alt='' />
+									</a>
+									<a href={movie.fnac} target='_blank' rel='noreferrer'>
+										<img src={fnac} alt='' />
+									</a>
+									<a href={movie.rakuten} target='_blank' rel='noreferrer'>
+										<img src={rakuten} alt='' />
+									</a>
+									<a href={movie.cultura} target='_blank' rel='noreferrer'>
+										<img src={cultura} alt='' />
+									</a>
+								</div>
+							</motion.div>
+						</div>
 					</div>
 				</motion.div>
 			)}

@@ -43,6 +43,9 @@
 			p {
 				color: #16e0bd;
 			}
+			a:hover {
+				transform: scale(1.25);
+			}
 		}
 		.shop-container img {
 			max-width: 5rem;
@@ -72,5 +75,10 @@
 	}
 	@media (max-width: 1350px) {
 		display: block;
+		.book-details {
+			p {
+				padding-left: 0;
+			}
+		}
 	}
 }
